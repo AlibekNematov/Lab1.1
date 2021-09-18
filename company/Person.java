@@ -13,7 +13,11 @@ public class Person implements HumanInterface {
 
     public static boolean setName(String name){
         if(name == ""){
-            return false;
+            try {
+                throw new PersonException("Name not entered");
+            } catch (PersonException e) {
+                e.printStackTrace();
+            }
         }
         return true;
     }
@@ -24,7 +28,11 @@ public class Person implements HumanInterface {
 
     public static boolean setHeight(int height){
         if (height > 250 || height <= 45)
-            return false;
+            try {
+                throw new PersonException("Height is incorrect");
+            } catch (PersonException e) {
+                e.printStackTrace();
+            }
         return true;
     }
 
@@ -34,7 +42,11 @@ public class Person implements HumanInterface {
 
     public static boolean setAge(int age){
         if (age > 160 || age <=0)
-            return false;
+            try {
+                throw new PersonException("Age is incorrect");
+            } catch (PersonException e) {
+                e.printStackTrace();
+            }
         return true;
     }
 

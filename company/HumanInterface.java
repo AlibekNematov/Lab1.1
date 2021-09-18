@@ -2,6 +2,6 @@ package com.company;
 
 public interface HumanInterface {
 
-        String think();
-        String getName(int n);
+    String think();
+    String getName(int n);
 }

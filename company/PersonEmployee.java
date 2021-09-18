@@ -11,10 +11,10 @@ public final class PersonEmployee extends AbstractPerson{
 
     public String department()
     {
-        String d = "1) Fitness department\n " +
-                "2) Sales department\n" +
-                " 3) reception\n" +
-                " 4) Сleaning department";
+        String d = "1) Bosses\\n" + "2) Fitness department\n " +
+                "3) Sales department\n" +
+                " 4) reception\n" +
+                " 5) Сleaning department";
         return d;
     }
 
