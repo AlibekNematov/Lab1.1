@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public final class PersonClient extends AbstractPerson{
 
-    public static int a;
+    public int a;
 
     Scanner in = new Scanner(System.in);
     String name = in.nextLine();
