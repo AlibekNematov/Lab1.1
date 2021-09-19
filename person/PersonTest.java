@@ -1,7 +1,7 @@
 package com.person;
 
 public class PersonTest extends Person{
-    public static void testPerson()
+    public void testPerson()
     {
         Person person = new Person();
         person.setPerson();
