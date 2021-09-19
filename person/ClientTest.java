@@ -1,7 +1,7 @@
 package com.person;
 
 public class ClientTest {
-    public static void clientTest(){
+    public void clientTest(){
         PersonClient client = new PersonClient();
         System.out.println("Choose a service: ");
         System.out.println(client.service());
