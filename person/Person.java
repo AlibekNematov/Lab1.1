@@ -1,17 +1,17 @@
 package com.person;
 
 public class Person implements HumanInterface {
-    public static String  name;
-    public static int age;
-    public static int height;
+    public  String  name;
+    public  int age;
+    public  int height;
 
     public Person(){}
 
-    public static String getName(){
+    public  String getName(){
         return name;
     }
 
-    public static boolean setName(String name){
+    public  boolean setName(String name){
         if(name == ""){
             try {
                 throw new PersonException("Name not entered");
@@ -22,11 +22,11 @@ public class Person implements HumanInterface {
         return true;
     }
 
-    public static int getHeight(){
+    public  int getHeight(){
         return height;
     }
 
-    public static boolean setHeight(int height){
+    public  boolean setHeight(int height){
         if (height > 250 || height <= 45)
             try {
                 throw new PersonException("Height is incorrect");
@@ -36,11 +36,11 @@ public class Person implements HumanInterface {
         return true;
     }
 
-    public static int getAge(){
+    public  int getAge(){
         return age;
     }
 
-    public static boolean setAge(int age){
+    public  boolean setAge(int age){
         if (age > 160 || age <=0)
             try {
                 throw new PersonException("Age is incorrect");
@@ -50,7 +50,7 @@ public class Person implements HumanInterface {
         return true;
     }
 
-    public static void setPerson() {
+    public void setPerson() {
         System.out.println("Введите имя: ");
         name = in.nextLine();
         setName(name);
